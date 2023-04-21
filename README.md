@@ -5,13 +5,14 @@
 設計一個學生類別，輸入姓名，各科程績，能顯示總分扔平均分數，最高/最低是哪一科，分數是多少
 
 ## 程式碼
-- [UI主程式] (https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore.UI/FormMain.cs)
+**Windows Form**
+[UI主程式](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore.UI/FormMain.cs)
 
-- Class Library
- - [Subject] (https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Subject.cs)
- - [Student] (https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Student.cs)
+**Class Library**
+ - [Subject](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Subject.cs)
+ - [Student](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Student.cs)
 
-- [UnitTest] (https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Prctice.CalcStudent.Test/StudentTest.cs)
+[UnitTest](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Prctice.CalcStudent.Test/StudentTest.cs)
 
 ### 實際執行畫面
 
