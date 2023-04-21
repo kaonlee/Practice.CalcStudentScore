@@ -6,13 +6,14 @@
 
 ## 程式碼
 **Windows Form**
-[UI主程式](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore.UI/FormMain.cs)
+- [UI主程式](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore.UI/FormMain.cs)
 
 **Class Library**
  - [Subject](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Subject.cs)
  - [Student](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Practice.CalcStudentScore/Student.cs)
 
-[UnitTest](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Prctice.CalcStudent.Test/StudentTest.cs)
+**NUnit**
+- [UnitTest](https://github.com/kaonlee/Practice.CalcStudentScore/blob/master/Prctice.CalcStudent.Test/StudentTest.cs)
 
 ### 實際執行畫面
 
