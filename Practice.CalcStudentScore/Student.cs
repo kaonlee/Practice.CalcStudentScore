@@ -26,7 +26,7 @@ namespace Practice.CalcStudentScore
             this.English = new Subject( "English", engScore );
             this.Science = new Subject( "Science", sciScore );
             this.Social = new Subject( "Social", hssScore );
-            this.AverageScore = new [] { Math,English,Science,Social }.Select(s=>(double)s.Score).Average( );
+            this.AverageScore = GetAverageScore();
         }
 
 		public Student( string name, string mathS, string engS, string sciS, string hssS )
@@ -35,17 +35,23 @@ namespace Practice.CalcStudentScore
             int engScore = int.TryParse ( engS, out engScore )?engScore : -1;
             int sciScore = int.TryParse( sciS, out sciScore ) ?sciScore : -1;
             int hssScore = int.TryParse( hssS, out hssScore )?hssScore: -1;
-			this.Name = name;
-            //new Student( name, mathScore, engScore, sciScore, hssScore ) { };
-            this.Math = new Subject( "Math", mathScore );
-            this.English = new Subject( "English", engScore );
-            this.Science = new Subject( "Science", sciScore );
-            this.Social = new Subject( "Social", hssScore );
-            this.AverageScore = new [] { Math, English, Science, Social }.Where( s => s.Score >= 0 ).Select( s => s.Score ).DefaultIfEmpty( ).Average( );
+            this.Name = name;
+            this.Math = new Subject("Math", mathScore);
+            this.English = new Subject("English", engScore);
+            this.Science = new Subject("Science", sciScore);
+            this.Social = new Subject("Social", hssScore);
+            this.AverageScore = GetAverageScore();
         }
 
+        private double GetAverageScore()
+        =>  new[] { Math, English, Science, Social }
+                .Where(s => s.Score >= 0)
+                .Select(s => s.Score)
+                .DefaultIfEmpty()
+                .Average();
+
         /// <summary>
-        /// 印出學生的成績與最
+        /// 印出學生的成績與最高/最低/平均成績
         /// </summary>
         /// <returns></returns>
         public string PrintStudentScore()
